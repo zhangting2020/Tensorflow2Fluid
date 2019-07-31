@@ -29,5 +29,5 @@ PaddlePaddle：输入的reader是一个读取器（callable）
 
 TensorFlow：返回的是与value具有相同shape的Tensor
 
-PaddlePaddle：返回的是被shuffle的读取器（callable）
+PaddlePaddle：返回的是输出数据被shuffle的读取器（callable）
 
