@@ -26,7 +26,7 @@ paddle.fluid.layers.cosine_decay(
 #### 输入参数
 
 TensorFlow: 有`alpha`参数，表示最小学习率，默认值为0.0；  
-PaddlePaddle: 无`alpha`参数；
+PaddlePaddle: 无`alpha`参数。 
 
 #### 计算方式
 
