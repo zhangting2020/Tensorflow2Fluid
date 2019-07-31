@@ -1,4 +1,4 @@
-:## tf.data.Dataset.batch
+## tf.data.Dataset.batch
 
 ### [tf.data.Dataset.batch](https://www.tensorflow.org/api_docs/python/tf/data/Dataset#batch)
 
