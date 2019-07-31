@@ -28,10 +28,11 @@ paddle.fluid.layers.elementwise_mod(
 
 当x与y中的元素都为正数时，结果具有一致性。当x与y的符号不同时，计算结果具有差异：
 
-TensorFlow：计算公式是取模运算，$mod(x, y) = x - floor(x/ y)*y$
+TensorFlow：计算公式是取模运算，$$mod(x, y) = x - floor(x/ y)*y$$
 
-PaddlePaddle：c++的底层实现，实际是取余（%），计算公式$mod(x,y)=x-fix(x/y)*y$。其中$fix$表示向0方向舍入。
+PaddlePaddle：c++的底层实现，实际是取余（%），计算公式$$mod(x,y)=x-fix(x/y)*y$$。其中$fix$表示向0方向舍入。
 
 #### 其他
 
 TensorFlow支持双向的broadcasting，PaddlePaddle只支持单向的broadcasting。
+
