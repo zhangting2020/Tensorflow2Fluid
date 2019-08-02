@@ -54,7 +54,7 @@ Tensorflow: 存在`SAME`和`VALID`两种padding方式
   output_spatial_shape[i] = ceil(input_spatial_shape[i] - spatial_filter_shape[i] + 1) / strides[i])
   ```
 
-  PaddlePaddle：通过`pool_padding`设置对输入的填充大小，通过ceil_mode设置输出的shape计算方式，可实现Tensorflow中的`SAME`和`VALID`方式。
+PaddlePaddle：通过`pool_padding`设置对输入的填充大小，通过ceil_mode设置输出的shape计算方式，可实现Tensorflow中的`SAME`和`VALID`方式。
 
 #### 使用方式
 
