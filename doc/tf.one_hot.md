@@ -31,7 +31,7 @@ TensorFlow：indices对应PaddlePaddle API中的input，但TensorFlow对输入�
 
 PaddlePaddle：输入的是tensor，最后一维必须为1。
 
-### 参数种类
+#### 参数种类
 
 TensorFlow：具有额外的可选参数
 

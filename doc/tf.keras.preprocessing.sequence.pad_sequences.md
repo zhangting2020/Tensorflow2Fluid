@@ -34,7 +34,7 @@ TensorFlow：提供了dtype，padding和truncating这3个额外的参数。
 - padding：string类型，可以是“pre”或者“post”，分别表示在每个序列的开头或者结尾进行pad操作
 - truncating：string类型，可以是“pre”或者“post”，分别表示在序列的开头或结尾处从大于“maxlen”的序列中删除值。
 
-PaddlePaddle：没有上述额外的参数设置。
+PaddlePaddle：没有上述额外的参数设置，仅在序列结尾处进行pad。
 
 #### 返回值
 

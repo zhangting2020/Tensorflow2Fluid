@@ -24,7 +24,7 @@ paddle.fluid.layers.kldiv_loss(
 
 #### 参数种类
 
-TensorFlow：没有reduction参数设置
+TensorFlow：没有reduction参数设置，返回的是各点的损失
 
 PaddlePaddle：可以通过reduction参数设置输出的损失值
 
