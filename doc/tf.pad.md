@@ -29,7 +29,7 @@ paddle.fluid.layers.pad2d(
 
 #### 数据格式
 
-TensorFlow：只支持输入数据格式为`NHWC`，表示`(batch，height, width, channel)`。
+TensorFlow：对输入数据格式没有明确限制。
 
 PaddlePaddle：默认输入格式为`NCHW`，可以通过data_format参数设置输入格式为`NHWC`。
 

@@ -34,7 +34,7 @@ PaddlePaddle：input和label都是LoDTensor；可以通过ignored_tokens参数�
 
 #### 返回值
 
-TensorFlow：返回ran k为 R - 1 的dense Tensor，其中 R 是 SparseTensor 输入 hypothesis和 truth的rank。
+TensorFlow：返回rank为 R - 1 的dense Tensor，其中 R 是 SparseTensor 输入 hypothesis和 truth的rank。
 
 PaddlePaddle：[batch_size,1]中序列到序列到编辑距离。
 
