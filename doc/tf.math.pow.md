@@ -30,6 +30,15 @@ TensorFlow：输入的x和y支持int类型
 
 PaddlePaddle：输入的x和y不支持int类型，只能是float32或者float64
 
+#### 参数种类
+
+TensorFlow：没有axis和act参数。
+
+PaddlePaddle：
+
+- axis：将Y传到X上的起始维度索引。
+- act：激活函数名称，应用于输出。
+
 #### 其他
 
 TensorFlow支持双向的broadcasting，PaddlePaddle只支持单向的broadcasting。
