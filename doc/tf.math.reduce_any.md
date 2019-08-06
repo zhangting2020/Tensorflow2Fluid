@@ -27,4 +27,9 @@ paddle.fluid.layers.reduce_any(
 
 #### 参数名称
 TensorFlow：使用`axis`表示运算维度；使用`keepdims`表示是否保留减小的维度；参数`reduction_indices`和`keep_dims`将被废弃；    
-PaddlePaddle：使用`dim`表示运算维度；使用`keep_dim`表示是否保留减小的维度。  
+PaddlePaddle：使用`dim`表示运算维度；使用`keep_dim`表示是否保留减小的维度。 
+
+#### 参数默认值
+TensorFlow：`keepdims`的默认值是`None`，但是代码中会先将`None`用`False`替换；    
+PaddlePaddle：`keep_dim`的默认值直接是`False`。 
+> 不影响使用
