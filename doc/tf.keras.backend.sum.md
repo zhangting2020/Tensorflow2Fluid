@@ -28,7 +28,6 @@ PaddlePaddle：没有`axis`参数，无法沿指定轴加和；无`keepdims`参�
 TensorFlow：参数`x`类型是`Tensor`；  
 PaddlePaddle：参数`x`类型是`list`，其元素是`Tensor`。
 
-
 #### 其他
 TensorFlow：本质上是和`reduce_sum()`功能一致；  
 PaddlePaddle：输入`x`中多个`Tensor`的求和。  
