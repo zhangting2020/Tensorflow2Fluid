@@ -26,7 +26,7 @@ paddle.fluid.layers.edit_distance(
 
 ### 功能差异
 
-### 参数差异
+#### 参数差异
 
 TensorFlow：hypothesis和truth都是SparseTensor
 

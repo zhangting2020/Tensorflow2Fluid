@@ -10,7 +10,7 @@ tf.keras.losses.KLDivergence(
 )
 ```
 
-### [paddle.fluid.layers.kldiv_loss](https://www.paddlepaddle.org.cn/documentation/docs/en/1.5/api/layers/nn.html#kldiv-loss)
+### [paddle.fluid.layers.kldiv_loss](https://www.paddlepaddle.org.cn/documentation/docs/zh/1.5/api_cn/layers_cn/nn_cn.html#kldiv-loss)
 
 ```python
 paddle.fluid.layers.kldiv_loss(
@@ -54,3 +54,11 @@ PaddlePaddle：提供op形式的调用接口，可以设置reduction参数，但
 TensorFlow：有sample_weight参数，该参数可以设置loss的系数，用于对loss进行加权求和。
 
 PaddlePaddle：无法对loss进行加权求和
+
+#### 计算方式
+
+API计算结果不一致。
+
+TensorFlow：计算公式为`y_pred - y_true * log(y_pred)`，其中的对数是自然对数，即`ln`。
+
+PaddlePaddle：计算公式为`l(x,target)=target∗(log(target)−x)`，其中的对数是自然对数，即`ln`

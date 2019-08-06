@@ -39,7 +39,7 @@ PaddlePaddle：
 - 没有相应设置
 - 输入的input和label必须具有相同的shape。
 
-#### 返回值类型
+#### 返回值
 
 TensorFlow：加权loss。如果reduction为NONE，返回值与labes具有相同shape，否则是一个标量。
 

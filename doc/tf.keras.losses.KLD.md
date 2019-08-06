@@ -9,7 +9,7 @@ tf.keras.losses.KLD(
 )
 ```
 
-### [paddle.fluid.layers.kldiv_loss](https://www.paddlepaddle.org.cn/documentation/docs/en/1.5/api/layers/nn.html#kldiv-loss)
+### [paddle.fluid.layers.kldiv_loss](https://www.paddlepaddle.org.cn/documentation/docs/zh/1.5/api_cn/layers_cn/nn_cn.html#kldiv-loss)
 
 ```python
 paddle.fluid.layers.kldiv_loss(
@@ -38,13 +38,9 @@ PaddlePaddle：可以通过reduction参数设置输出的损失值
 
 #### 计算方式
 
-二者计算公式均为`y_pred - y_true * log(y_pred)`，但是其中的对数函数不同
+API计算结果不一致。
 
-TensorFlow：源码中调用的是math_ops.log，实际是自然对数，即`ln`
+TensorFlow：计算公式为`y_pred - y_true * log(y_pred)`，其中的对数是自然对数，即`ln`。
 
-```python
-return math_ops.reduce_sum(y_true * math_ops.log(y_true / y_pred), axis=-1)
-```
-
-PaddlePaddle：使用的对数函数是log，即以10为底的对数。
+PaddlePaddle：计算公式为`l(x,target)=target∗(log(target)−x)`，其中的对数是自然对数，即`ln`
 
